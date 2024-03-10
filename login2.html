@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="styles.css"> 
+  <title>Futuristic Login</title> 
+ <style type="text/css" id="dcoder_stylesheet">body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #282828;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+label {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #00b3ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0099ff;
+}
+
+.hidden {
+  display: none;
+}</style></head> 
+ <body> 
+  <div class="login-container"> 
+   <h1>Bienvenido a mi login:3</h1> 
+   <form id="login-form"> 
+    <div class="form-control"> <label for="username">Username</label> 
+     <input type="text" id="username" placeholder="Enter username"> 
+    </div> 
+    <div class="form-control"> <label for="password">Password</label> 
+     <input type="password" id="password" placeholder="Enter password"> 
+    </div> <button type="submit">Login</button> 
+   </form>
+  </div>
+ 
+<script type="text/javascript" id="dcoder_script">const form = document.querySelector('form');
+const username = document.getElementById('username');
+const password = document.getElementById('password');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  if (username.value === 'Yeison1024' && password.value === '1029665334') {
+    alert('Login successful!');
+  } else {
+    alert('Invalid username or password.');
+  }
+});
+document.getElementById('login-form').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  if (username === 'user' && password === 'password') {
+    window.location.href = 'dashboard.html';
+  } else {
+    document.getElementById('error-message').classList.remove('hidden');
+  }
+});</script></body></html>
